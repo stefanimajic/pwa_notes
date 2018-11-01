@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PWA quick notes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/idea.png">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta name="application-name" content="Quick notes" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="Description" content="PWA for notes">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <div class="notepad">
+          <h1 class="notepad__heading">PWA quick notes</h1>
+          <form class="notepad__form">
+            <input class="notepad__form-input" placeholder="Start typing your notes&hellip;" id="form-input" />
+            <label class="notepad__form-label" for="form-input">Add an item</label>
+          </form>
+          <ul class="notepad__list"></ul>
+          <button class="notepad__clear"><i class="far fa-times-circle"></i> Clear list</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="js/note-list.js"></script>
+  </body>
+</html>
